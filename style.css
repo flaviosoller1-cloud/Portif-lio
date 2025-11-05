@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bitcount+Grid+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-color: #2d3331;
+  font-family: "Bitcount Grid Single", system-ui;
+  height: 100vh;
+}
+
+a {
+  color: #2bcfa1;
+}
+
+h1 {
+  font-size: 46px;
+  transform: 0.5s;
+  margin: 40px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid red;
+  animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+  
+}
+
+#container {
+  display: flex;
+}
+
+h1:hover {
+  text-decoration: underline;
+  transform: 0.5s;
+  font-size: 50px;
+}
+
+section {
+  background-color: #2bcfa1;
+  color: #2d3331;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 35px 7px 61px -10px rgba(0, 0, 0, 0.61);
+  transition: 0.5s;
+}
+
+section:hover {
+  box-shadow: 35px 7px 50px 17px rgba(0, 0, 0, 0.61);
+  transition: 0.5s;
+}
+
+li a {
+  text-decoration: none;
+  color: #2bcfa1;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+li a:hover {
+  font-size: 36px;
+  transition: 0.5s;
+  margin: 30px;
+}
+
+header {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
+
+header ul li{
+    margin: 10px;
+    font-size: 10px;
+}
+
+#conteudo-principal {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 87%;
+    }
+}
+
+@keyframes blink{
+    from, to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: red;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 46px;
+  transform: 0.5s;
+  margin: 40px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid red;
+  animation: 3s linear 0s forwards typing, blink 0.75s step-end infinite;
+  
+}
+#conteudo-principal {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #container{
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+section:hover{
+box-shadow: 0 0 25px red, 0 0 10 blue;
+transform: perspective(600px) rotateY(5deg);
+transition: 0.5s;
+
+}
